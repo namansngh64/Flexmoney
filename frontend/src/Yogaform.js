@@ -16,7 +16,7 @@ const Yogaform = () => {
     });
   };
   const completePayment = (values) => {
-    return fetch("http://localhost:5000/api/makePayment", {
+    return fetch("https://flexmoney-2x0t.onrender.com/api/makePayment", {
       //can add this in .env file
       method: "POST",
       headers: {
