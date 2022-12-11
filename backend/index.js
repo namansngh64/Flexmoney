@@ -6,7 +6,9 @@ const port = process.env.PORT || 5000;
 const paymentRoute = require("./routes/payment");
 
 //middlewares
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(
+  cors({ credentials: true, origin: "https://flexmoneyfront.onrender.com" })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
